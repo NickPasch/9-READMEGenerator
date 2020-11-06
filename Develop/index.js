@@ -1,6 +1,9 @@
+// Requiring needed packages
 const inquirer = require('inquirer')
 const fs = require ('fs')
 
+// Prompting user for information that will constitute the readme using
+// the inquirer package
 inquirer.prompt([
     {
         type: "input",
@@ -53,19 +56,21 @@ inquirer.prompt([
         message: "Email address?",
         name: "email",
     },
-    
+// Taking the answers directly from the prompt and using a foreach to iterate
+// them into where they need to be given the data that it is 
 ]).then(answers => {
+// Defining an array with the badges that corresponds to the list of licenses 
+// I have chosen to use 
     var choices = [
         "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
         "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
         "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
         "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
         ]
-
+// Initializing the data to find the correct badge 
     var dat = String(answers.license)
-
     var theBadge;
-
+// The function that finds the correct badge
     function findBadge(){
         if(dat === "MIT"){
             theBadge = choices[0]
@@ -77,9 +82,8 @@ inquirer.prompt([
             theBadge = choices[3]
         }
     }
-    
     findBadge();
-
+// This variable holds the new readme and is formatted for the markdown document
     var data = `
 # ${answers.title}  ${theBadge}
 
@@ -125,7 +129,7 @@ My Github: https://github.com/${answers.github}
 
 If you have any questions, feel free to email me at: ${answers.email}
     `
-
+// Writing the new markdown file with the fs package
 fs.writeFile("new.md", data, function(err){
     if(err){
         return err;
