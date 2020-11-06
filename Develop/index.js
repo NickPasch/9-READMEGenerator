@@ -61,18 +61,25 @@ inquirer.prompt([
         "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
         "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
         ]
-    if(answers.license[0]){
-        var theBadge = choices[0]
+
+    var dat = String(answers.license)
+
+    var theBadge;
+
+    function findBadge(){
+        if(dat === "MIT"){
+            theBadge = choices[0]
+        }else if(dat === "APACHE 2.0"){
+            theBadge = choices[1]
+        }else if(dat === "GPL 3.0"){
+            theBadge = choices[2]
+        }else if(dat === "BSD 3"){
+            theBadge = choices[3]
+        }
     }
-    if(answers.license[1]){
-        var theBadge = choices[1]
-    }
-    if(answers.license[2]){
-        var theBadge = choices[2]
-    }
-    if(answers.license[3]){
-        var theBadge = choices[3]
-    }
+    
+    findBadge();
+
     var data = `
 # ${answers.title}  ${theBadge}
 

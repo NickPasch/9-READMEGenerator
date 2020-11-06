@@ -1,5 +1,5 @@
 
-# weret [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Readme generator   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Table of Contents
 
@@ -13,33 +13,33 @@
 
 ## Description
         
-ergerg
+Generates readmes 
 
-## Installation
+## Installation 
 
-ergerg
+Add the script file to your code 
 
 ## Usage
 
-ergreg
+Invoke using "node (filename).js", then answer the questions that follow 
 
 ## License
 
-MIT
+This application is covered under the APACHE 2.0 license.
 
 ## Contributing
 
-erg
+Respect all established code 
 
 ## Tests
 
-ergerg
+None 
 
 ## Questions
 
-ergerg
+None
 
-My Github: https://github.com/errgreg
+My Github: https://github.com/NickPasch
 
-If you have any questions, feel free to email me at: erg
+If you have any questions, feel free to email me at: paschnick100@gmail.com
     
