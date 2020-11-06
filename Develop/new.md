@@ -1,5 +1,5 @@
 
-# Readme Generator
+# README Generator 
 
 # Table of Contents
 
@@ -13,15 +13,15 @@
 
 ## Description
         
-You can invoke this project using node to quickly generate a readme, saving time. 
+Generates a README
 
 ## Installation
 
-You just tack it into your source files. 
+Just include it in your source code! 
 
 ## Usage
 
-Invoke it using "node (filename.js)", and answer the questions. 
+Invoke it using "node (filename).js", and answer the questions! 
 
 ## License
 
@@ -29,15 +29,15 @@ this
 
 ## Contributing
 
-Nick Pasch
+Nick
 
 ## Tests
 
-No Tests! 
+None!
 
 ## Questions
 
-None!
+NOne!
 
 My Github: https://github.com/NickPasch
 
