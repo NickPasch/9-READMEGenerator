@@ -48,48 +48,62 @@ inquirer.prompt([
         message: "Questions",
         name: "questions",
     },
+    {
+        type: "input",
+        message: "Github username?",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "Email address?",
+        name: "email",
+    },
     
 ]).then(answers => {
     var data = `
-    # ${answers.title}
+# ${answers.title}
 
-    # Table of Contents
+# Table of Contents
 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-    ## Description
+## Description
         
-    ${answers.description}
+${answers.description}
 
-    ## Installation
+## Installation
 
-    ${answers.installation}
+${answers.installation}
 
-    ## Usage
+## Usage
 
-    ${answers.usage}
+${answers.usage}
 
-    ## License
+## License
 
-    ${answers.license}
+${answers.license}
 
-    ## Contributing
+## Contributing
 
-    ${answers.contributing}
+${answers.contributing}
 
-    ## Tests
+## Tests
 
-    ${answers.tests}
+${answers.tests}
 
-    ## Questions
+## Questions
 
-    ${answers.questions}
+${answers.questions}
+
+My Github: https://github.com/${answers.github}
+
+If you have any questions, feel free to email me at: ${answers.email}
     `
 
 fs.writeFile("new.md", data, function(err){

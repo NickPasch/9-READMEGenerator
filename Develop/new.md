@@ -1,41 +1,45 @@
 
-    # generator
+# Readme Generator
 
-    # Table of Contents
+# Table of Contents
 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-    ## Description
+## Description
         
-    generates things
+You can invoke this project using node to quickly generate a readme, saving time. 
 
-    ## Installation
+## Installation
 
-    add it to your source code
+You just tack it into your source files. 
 
-    ## Usage
+## Usage
 
-    use node
+Invoke it using "node (filename.js)", and answer the questions. 
 
-    ## License
+## License
 
-    this
+this
 
-    ## Contributing
+## Contributing
 
-    me 
+Nick Pasch
 
-    ## Tests
+## Tests
 
-    test
+No Tests! 
 
-    ## Questions
+## Questions
 
-    quest
+None!
+
+My Github: https://github.com/NickPasch
+
+If you have any questions, feel free to email me at: paschnick100@gmail.com
     
