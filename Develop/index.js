@@ -26,16 +26,16 @@ inquirer.prompt([
         type: "list",
         message: "What license do you want?",
         name: "license",
-        choices: ["this", "that", "theother"]
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3"],
     },
     {
         type: "input",
-        message: "Who is contributing to the project?",
+        message: "What are the guidelines for future contributors?",
         name: "contributing",
     },
     {
         type: "input",
-        message: "Tests",
+        message: "Instructions for testing?",
         name: "tests",
     },
     {
@@ -55,8 +55,26 @@ inquirer.prompt([
     },
     
 ]).then(answers => {
+    var choices = [
+        "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+        "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+        "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+        "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+        ]
+    if(answers.license[0]){
+        var theBadge = choices[0]
+    }
+    if(answers.license[1]){
+        var theBadge = choices[1]
+    }
+    if(answers.license[2]){
+        var theBadge = choices[2]
+    }
+    if(answers.license[3]){
+        var theBadge = choices[3]
+    }
     var data = `
-# ${answers.title}
+# ${answers.title}  ${theBadge}
 
 # Table of Contents
 
@@ -72,7 +90,7 @@ inquirer.prompt([
         
 ${answers.description}
 
-## Installation
+## Installation 
 
 ${answers.installation}
 
@@ -82,7 +100,7 @@ ${answers.usage}
 
 ## License
 
-${answers.license}
+This application is covered under the ${answers.license} license.
 
 ## Contributing
 

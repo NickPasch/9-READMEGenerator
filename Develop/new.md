@@ -1,5 +1,5 @@
 
-# README Generator 
+# weret [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # Table of Contents
 
@@ -13,33 +13,33 @@
 
 ## Description
         
-Generates a README
+ergerg
 
 ## Installation
 
-Just include it in your source code! 
+ergerg
 
 ## Usage
 
-Invoke it using "node (filename).js", and answer the questions! 
+ergreg
 
 ## License
 
-this
+MIT
 
 ## Contributing
 
-Nick
+erg
 
 ## Tests
 
-None!
+ergerg
 
 ## Questions
 
-NOne!
+ergerg
 
-My Github: https://github.com/NickPasch
+My Github: https://github.com/errgreg
 
-If you have any questions, feel free to email me at: paschnick100@gmail.com
+If you have any questions, feel free to email me at: erg
     
