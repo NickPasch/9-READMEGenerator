@@ -130,7 +130,7 @@ My Github: https://github.com/${answers.github}
 If you have any questions, feel free to email me at: ${answers.email}
     `
 // Writing the new markdown file with the fs package
-fs.writeFile("README.md", data, function(err){
+fs.writeFile("README_SAMPLE.md", data, function(err){
     if(err){
         return err;
     };
